@@ -11,9 +11,9 @@ class ViewController: UIViewController {
     
     // MARK: Properties
     
-    var redButton: UIButton?
-    var orangeButton: UIButton?
-    var blueButton: UIButton?
+    private var redButton: UIButton?
+    private var orangeButton: UIButton?
+    private var blueButton: UIButton?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     // MARK: Set Up Home Screen
     
-    func setUpHomeScreen() {
+    private func setUpHomeScreen() {
         orangeButton = UIButton()
         orangeButton?.backgroundColor = .orange
         orangeButton?.titleLabel?.textColor = .white
